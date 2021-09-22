@@ -1,4 +1,4 @@
-#include <catch2/catch_test_macros.hpp>
+#include <catch.hpp>
 
 std::vector<int> VectorPlusN(std::vector<int> v, int n){
     for (int i=0; i<vec.size(); i++)
