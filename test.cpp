@@ -23,6 +23,6 @@ TEST_CASE( "Add n to vector", "[VectorPlusN]" ) {
     std::vector<int> b{6,7,8,10,12,16}
     std::vector<int> c{0,1,2,4,6,10}
     REQUIRE( VectorPlusN(sim,1) == a );
-    REQUIRE( VectorPlusN(sim,5) == 2 );
-    REQUIRE( VectorPlusN(sim,-1) == 6 );
+    REQUIRE( VectorPlusN(sim,5) == b );
+    REQUIRE( VectorPlusN(sim,-1) == c );
 }
