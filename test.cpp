@@ -3,7 +3,7 @@
 std::vector<int> VectorPlusN(std::vector<int> v, int n){
     for (int i=0; i<v.size(); i++)
     {
-        vec[i] = v[i]+n;
+        v[i] = v[i]+n;
     }
     return v;
 }
@@ -12,7 +12,7 @@ std::vector<int> VectorPlusN(std::vector<int> v, int n){
 std::vector<int> VectorTimesN(std::vector<int> v, int n){
     for (int i=0; i<v.size(); i++)
     {
-        vec[i] = v[i]*n;
+        v[i] = v[i]*n;
     }
     return v;
 }
