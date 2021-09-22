@@ -1,3 +1,4 @@
+#define CATCH_CONFIG_MAIN
 #include "catch.hpp"
 
 std::vector<int> VectorPlusN(std::vector<int> v, int n){
