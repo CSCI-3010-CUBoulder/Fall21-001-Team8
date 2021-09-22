@@ -30,21 +30,37 @@ std::vector<bool> EvenMask(std::vector<int>);
 std::vector<bool> OddMask(std::vector<int>);
 
 // Sums all numbers in a vector and returns the resulting value
-int Sum(std::vector<int> nums);
-std::for_each(vector.begin(), vector.end(), [&] (int n) {
-    nums += n;
-  return nums;
-});
+int Sum(std::vector<int> nums){
+    int n = 0;
+    for (int i=0; i<vec.size(); i++)
+    {
+        n += vec[i];
+    }
+    return n;
+};
+
+
 // Multiplies all numbers in a vector together and returns the resulting value
 int Product(std::vector<int> nums);
-std::for_each(vector.begin(), vector.end(), [&] (int n) {
-    nums *= n;
-  return nums;
+
 // Adds an integer n to each element of a given vector
-std::vector<int> VectorPlusN(std::vector<int> v, int n);
+std::vector<int> VectorPlusN(std::vector<int> v, int n){
+    for (int i=0; i<vec.size(); i++)
+    {
+        vec[i] = vec[i]+n;
+    }
+    return n;
+};
 
 // Multiples an integer n with each element of a given vector
-std::vector<int> VectorTimesN(std::vector<int> v, int n);
+std::vector<int> VectorTimesN(std::vector<int> v, int n){
+    for (int i=0; i<vec.size(); i++)
+    {
+        vec[i] = vec[i]*n;
+    }
+    return n;
+};
+
 
 // takes in two integers and returns a vector of size n with
 // values n*1, n*2, n*3... up to n*m
