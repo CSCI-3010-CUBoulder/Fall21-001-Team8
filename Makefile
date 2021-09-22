@@ -1,11 +1,10 @@
-
 CXX = g++
 CXXFLAGS = -std=c++17 -Wall
 
-all: main
+all: test
 
 clean:
-	rm main
+	rm test
 
-main: pe3_references.cpp
-	$(CXX) $(CXXFLAGS) pe3_references.cpp -o main
+test: test.cpp
+	$(CXX) $(CXXFLAGS) test.cpp -o test
