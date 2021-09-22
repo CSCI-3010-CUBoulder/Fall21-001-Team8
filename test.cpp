@@ -1,18 +1,18 @@
 #include "catch.hpp"
 
 std::vector<int> VectorPlusN(std::vector<int> v, int n){
-    for (int i=0; i<vec.size(); i++)
+    for (int i=0; i<v.size(); i++)
     {
-        vec[i] = vec[i]+n;
+        vec[i] = v[i]+n;
     }
     return n;
 }
 
 // Multiples an integer n with each element of a given vector
 std::vector<int> VectorTimesN(std::vector<int> v, int n){
-    for (int i=0; i<vec.size(); i++)
+    for (int i=0; i<v.size(); i++)
     {
-        vec[i] = vec[i]*n;
+        vec[i] = v[i]*n;
     }
     return n;
 }
